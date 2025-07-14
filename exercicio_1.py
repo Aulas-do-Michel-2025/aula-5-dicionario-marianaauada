@@ -56,3 +56,10 @@ genes = {
 }
 
 # Criar seu código a partir daqui
+
+gene_procurado = input("Digite o nome do gene:")
+
+if gene_procurado in genes:
+    print(f"O tamanho do gene {gene_procurado} é {genes[gene_procurado]} pb.")
+else:
+    print("Gene não encontrado.")
