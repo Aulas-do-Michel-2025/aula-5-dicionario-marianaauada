@@ -32,3 +32,7 @@ variantes = [
     {"id": "rs252627", "frequencia": 0.0001},
     {"id": "rs282930", "frequencia": 0.06},
 ]
+
+for variantes_menores in variantes:
+    if variantes_menores["frequencia"] < 0.01:
+        print(variantes_menores["id"])
